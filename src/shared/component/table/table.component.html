@@ -1,0 +1,617 @@
+<div class="container mt-5">
+    <h3 class="text-center mb-3">{{head}}</h3>
+    <div class="row">
+        <div class="col-6">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let std of students1; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{std.name}}</td>
+                        <td>{{std.age}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-6">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of products2; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.name}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <hr>
+
+        <div class="row">
+        <div class="col-6">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Task</th>
+                        <th>IsCompleted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of tasks; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.task}}</td>
+                        <td>{{ele.completed}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-6">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of books1; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.title}}</td>
+                        <td>{{ele.author}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <hr>
+
+     <div class="row">
+        <div class="col-6">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>UserName</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of users; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.username}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-6">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of posts; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.title}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <hr>
+
+      <div class="row">
+        <div class="col-6">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of  employees1; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.name}}</td>
+                        <td>{{ele.dept}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-6">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of orders1; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.item}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-6">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Flight Number</th>
+                        <th>Destination</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of  flights1; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.flightNo}}</td>
+                        <td>{{ele.destination}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-6">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of expenses; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.category}}</td>
+                        <td>{{ele.amount}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-8 offset-2">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of products; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.name}}</td>
+                        <td>{{ele.category}}</td>
+                        <td>{{ele.price}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <hr>
+
+       <div class="row">
+         <div class="col-8 offset-2">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Experience</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of employees; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.name}}</td>
+                        <td>{{ele.department}}</td>
+                        <td>{{ele.experience}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+
+       <hr>
+
+         <div class="row">
+         <div class="col-8 offset-2">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Name</th>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of students; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.name}}</td>
+                        <td>{{ele.subjects}}</td>
+                        <td>{{ele.grades}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+
+       <hr>
+
+        <div class="row">
+         <div class="col-8 offset-2">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Projects</th>
+                        <th>Members</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of teams; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.project}}</td>
+                        <td>{{ele.members}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+
+       <hr>
+
+       <div class="row">
+         <div class="col-8 offset-2">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Name</th>
+                        <th>Subcategory</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of categories; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.name}}</td>
+                        <td>{{ele.subcategories}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+
+       <hr>
+
+       <div class="row">
+         <div class="col-8 offset-2">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of books; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.title}}</td>
+                        <td>{{ele.author}}</td>
+                        <td>{{ele.genre}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+
+       <hr>
+
+       <div class="row">
+         <div class="col-8 offset-2">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Title</th>
+                        <th>Rating</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of movies; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.title}}</td>
+                        <td>{{ele.rating}}</td>
+                        <td>{{ele.duration}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+
+       <hr>
+
+        <div class="row">
+         <div class="col-8 offset-2">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Day</th>
+                        <th>Activities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of workoutPlans; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.day}}</td>
+                        <td>{{ele.activities}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+
+       <hr>
+
+        <div class="row">
+         <div class="col-8 offset-2">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Event</th>
+                        <th>Attendees</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of events; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.event}}</td>
+                        <td>{{ele.attendees}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+
+       <hr>
+
+         <div class="row">
+         <div class="col-8 offset-2">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Company</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of clients; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.name}}</td>
+                        <td>{{ele.phone}}</td>
+                        <td>{{ele.company}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+
+       <hr>
+
+       <div class="row">
+         <div class="col-8 offset-2">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of suppliers; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.name}}</td>
+                        <td>{{ele.location}}</td>
+                        <td>{{ele.rating}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+
+       <hr>
+
+       <div class="row">
+         <div class="col-8 offset-2">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Name</th>
+                        <th>Menu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of restaurants; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.name}}</td>
+                        <td>{{ele.menus}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+
+       <hr>
+
+       <div class="row">
+         <div class="col-8 offset-2">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Department</th>
+                        <th>Manager</th>
+                        <th>Employees</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of departments; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.department}}</td>
+                        <td>{{ele.manager}}</td>
+                        <td>{{ele.employees}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+
+       <hr>
+
+       <div class="row">
+         <div class="col-8 offset-2">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of  transactions; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.amount}}</td>
+                        <td>{{ele.date}}</td>
+                        <td>{{ele.status}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+
+       <hr>
+
+       <div class="row">
+         <div class="col-8 offset-2">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Title</th>
+                        <th>Instructor</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of  courses; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.title}}</td>
+                        <td>{{ele.instructor}}</td>
+                        <td>{{ele.hours}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+
+       <hr> 
+
+       <div class="row">
+         <div class="col-8 offset-2">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>Name</th>
+                        <th>Species</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of  pets; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.name}}</td>
+                        <td>{{ele.species}}</td>
+                        <td>{{ele.age}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+
+       <hr>
+
+       <div class="row">
+         <div class="col-8 offset-2">
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Seriol No</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of  flights; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{ele.from}}</td>
+                        <td>{{ele.to}}</td>
+                        <td>{{ele.duration}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+</div>
